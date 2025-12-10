@@ -1,1 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cherta4242's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
 
+    body {
+      font-family: 'Nanum Gothic', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      display: flex;
+    }
+
+    /* 사이드바 */
+    nav {
+      width: 220px;
+      min-height: 100vh;
+      background-color: #330099;
+      padding: 2rem 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      color: white;
+    }
+
+    nav h1 {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-bottom: 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s;
+      padding: 6px 12px;
+      display: inline-block;
+      border-radius: 4px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    nav ul li a.active {
+      background-color: #fff;
+      color: #330099;
+      text-decoration: underline;
+    }
+
+
+    /* 본문 전체 마진 */
+    .content {
+      margin-left: 240px;
+      max-width: 2500px;
+      padding: 2rem;
+    }
+
+    header.header1 {
+      background: linear-gradient(to right, #330099, #6b5b95);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 2.2rem;
+      color: white;
+    }
+
+    h2 {
+      border-left: 5px solid #330099;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      color: #330099;
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    .likecolor {
+      color: #330099;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-left: 240px;
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      nav {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        text-align: center;
+      }
+      .content, footer {
+        margin-left: 0;
+        padding: 1rem;
+      }
+    }
+      #toTopBtn {
+        position: fixed;
+        bottom: 40px;
+        right: 30px;
+        z-index: 100;
+        background: linear-gradient(to right, #330099, #6b5b95);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none; /* 처음엔 숨김 */
+        font-size: 14px;
+      }
+    #toTopBtn:hover {
+      background-color: #333;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- 사이드바 -->
+  <nav>
+    <h1>Cherta4242 포트폴리오</h1>
+    <ul>
+      <li><a href="#intro">자기소개</a></li>
+      <li><a href="#misc">기타 정보</a></li>
+      <li><a href="#skills">기술 스택</a></li>
+      <li><a href="#license">자격증</a></li>
+      <li><a href="#projects">프로젝트</a></li>
+      <li><a href="#education">학업 성과</a></li>
+    </ul>
+  </nav>
+
+  <!-- 본문 -->
+  <div class="content">
+      <header class="header1">
+          <h1>CHERTA4242's Portfolio</h1>
+          <p>웹 개발자 지망생의 성장을 써내려가는 포트폴리오</p>
+      </header>
+
+
+    <section id="intro">
+      <h2>자기소개 한줄 코멘트</h2>
+      <p>게임을 좋아하는 평범한 대학생입니다. 다른 사람들과 웃으며 지내는 것을 좋아합니다.</p>
+    </section>
+
+    <section>
+      <h2>간단한 정보</h2>
+        <ul>
+        <li>성별: 남</li>
+        <li>이름: 장진우</li>
+        <li>연락처: 010-XXXX-XXXX</li>
+        <li>나이: 24</li>
+      </ul>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+
+
+    <section id="misc">
+      <h2>기타 정보</h2>
+
+    <section>
+      <ul>
+        <h3>관심 분야</h3>
+        <li>게임</li>
+        <li>웹 개발</li>
+        <li>UI/UX 디자인</li>
+      </ul>
+    </section>
+
+    <section>
+        <ul>
+          <h3>좋아하는 것</h3>
+          <li><b>게임</b></li>
+          <li><span class="likecolor">이런 색깔 ◆</span></li>
+          <li>유튜버 <b>김블루</b>와 가수 <b>Hebi</b></li>
+          <li>향수, 전자기기</li>
+        </ul>
+      </section>
+      <br>
+      
+      <section>
+          <h3>싫어하는 것</h3>
+          <ul>
+              <li>표고버섯, 조개류</li>
+              <li>정돈되지 않은 공간</li>
+          </ul>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      </section>
+    </section>
+
+
+
+
+    <section id="skills">
+      <h2>기술 스택</h2>
+
+      <h3>프로그래밍 언어</h3>
+      <ul>
+        <li>HTML</li>
+        <li>Java</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <h3>Frontend</h3>
+      <ul>
+        <li>HTML/CSS</li>
+        <li>React</li>
+      </ul>
+
+      <h3>Backend</h3>
+      <ul>
+        <li>현재 없음</li>
+      </ul>
+
+      <h3>Database</h3>
+      <ul>
+        <li>HeidiSQL</li>
+      </ul>
+
+      <h3>Tools</h3>
+      <ul>
+        <li>Git/GitHub</li>
+        <li>Figma</li>
+      </ul>
+
+      <h3>IDE</h3>
+      <ul>
+        <li>Eclipse</li>
+        <li>Visual Studio Code</li>
+        <li>Android Studio</li>
+      </ul>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+
+
+
+
+    <section id="license">
+      <h2>자격증</h2>
+      <p>없습니다. 하지만 앞으로 자격증을 딸 예정입니다!</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+
+
+
+
+    <section id="projects">
+      <h2>프로젝트 경험</h2>
+      <p>없습니다. 하지만 앞으로 다양한 프로젝트에 참여할 계획입니다!</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+
+
+
+
+    <section id="education">
+      <h2>전공 관련 수강 과목 및 성과</h2>
+      <ul>
+        <h3 style="margin-bottom: 20px; font-size: 20px;">2024(1학년) / 1학기</h3>
+        <li style="margin-bottom: 10px; font-size: 16px;"><b>Frontend Programming</b><br><b>수강</b>: 완료 / <b>점수</b>: A</li>
+        <li style="margin-bottom: 10px; font-size: 16px;"><b>사물인터넷 프로그래밍</b><br><b>수강</b>: 완료 / <b>점수</b>: A</li>
+        <li style="margin-bottom: 10px; font-size: 16px;"><b>컴퓨팅 사고력과 코딩</b><br><b>수강</b>: 완료 / <b>점수</b>: B+</li>
+        <li style="margin-bottom: 10px; font-size: 16px;"><b>인공지능 입문</b><br><b>수강</b>: 완료 / <b>점수</b>: B+</li>
+        <li style="margin-bottom: 10px; font-size: 16px;"><b>C 프로그래밍</b><br><b>수강</b>: 완료 / <b>점수</b>: C+</li>
+        <br>
+
+        <h3>2024(1학년) / 2학기</h3>
+        <li><b>Java Programming</b><br>수강: 완료 / 점수: B+</li>
+        <li><b>Opensource Software</b><br>수강: 완료 / 점수: B+</li>
+        <li><b>Frontend Programming2</b><br>수강: 완료 / 점수: B</li>
+        <li><b>Data Base</b><br>수강: 완료 / 점수: B</li>
+        <br>
+
+        <h3>2025(2학년) / 1학기</h3>
+        <li>학기 중</li>
+        <br>
+
+        <h3>2025(2학년) / 2학기</h3>
+        <li>학기 예정</li>
+        <br>
+
+      </ul>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+
+
+
+  </div>
+
+  <footer>
+    &copy; 작성자: Cherta4242
+
+    <button id="toTopBtn" title="맨 위로 이동">↑ Top</button>
+  </footer>
+
+  
+  <script>
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute("id");
+        const navLink = document.querySelector(`nav ul li a[href="#${id}"]`);
+
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => link.classList.remove("active"));
+          if (navLink) navLink.classList.add("active");
+        }
+      });
+    }, {
+          root: null,
+          rootMargin: "-1px 0px 0px 0px", // ← 상단에서 1px 위치에 도달했을 때 인식
+          threshold: 0.75
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+    const toTopBtn = document.getElementById("toTopBtn");
+
+    // 스크롤 시 버튼 표시/숨김
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    };
+
+    // 버튼 클릭 시 맨 위로 스크롤
+    toTopBtn.onclick = function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    };
+
+  </script>
+</body>
+</html>
